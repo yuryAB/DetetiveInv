@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var reports =  Report.all
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         overrideUserInterfaceStyle = .light
         navigationItem.hidesBackButton = true
         listTableView.rowHeight = 135.0
