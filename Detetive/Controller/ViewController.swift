@@ -94,16 +94,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         for object in intuition{
             switch object {
             case encrypt(message:hour):
-                print(hour)
                 intuitionScore+=1
             case encrypt(message:local):
-                print(local)
                 intuitionScore+=1
             case encrypt(message:suspect):
-                print(suspect)
                 intuitionScore+=1
             case encrypt(message:weapon):
-                print(weapon)
                 intuitionScore+=1
             default:
                 intuitionScore+=0
