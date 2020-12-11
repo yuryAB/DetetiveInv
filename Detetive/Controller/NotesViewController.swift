@@ -42,10 +42,10 @@ class NotesViewController: UIViewController {
         weaponPickerView.tag = 3
         suspectPickerView.tag = 4
         saveButtonState()//feghijkl
-        setupSuspects()
+        setupSuspects()//tvmqimve
     }
     
-    func setupSuspects(){//tvmqimve
+    func setupSuspects(){
         if objects.suspects.count == 4{
         objects.suspects.removeLast()
         }
