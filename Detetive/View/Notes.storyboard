@@ -17,13 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGG-7t-oBf">
-                                <rect key="frame" x="145" y="708" width="124" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="124" id="lQb-Ma-ILe"/>
-                                    <constraint firstAttribute="height" constant="59" id="w5c-Fc-OsZ"/>
-                                </constraints>
+                                <rect key="frame" x="163" y="731" width="88" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Salvar">
+                                <state key="normal" title="   Salvar    ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -56,15 +52,14 @@
                         <constraints>
                             <constraint firstItem="a3Q-yU-wYK" firstAttribute="leading" secondItem="hhG-Kg-ESb" secondAttribute="leading" constant="20" id="0ub-zW-iHI"/>
                             <constraint firstItem="mDw-ka-kwv" firstAttribute="leading" secondItem="hhG-Kg-ESb" secondAttribute="leading" constant="20" id="1ez-Lc-AeF"/>
+                            <constraint firstItem="hhG-Kg-ESb" firstAttribute="bottom" secondItem="ZGG-7t-oBf" secondAttribute="bottom" constant="95" id="5Ft-RE-0fM"/>
                             <constraint firstItem="3eV-t3-IMS" firstAttribute="leading" secondItem="hhG-Kg-ESb" secondAttribute="leading" constant="20" id="71I-U6-7xg"/>
                             <constraint firstItem="uUi-8Q-Xex" firstAttribute="leading" secondItem="hhG-Kg-ESb" secondAttribute="leading" constant="20" id="BfE-bX-IeM"/>
                             <constraint firstItem="mDw-ka-kwv" firstAttribute="top" secondItem="uUi-8Q-Xex" secondAttribute="bottom" constant="21" id="Hcw-p2-LbN"/>
-                            <constraint firstItem="ZGG-7t-oBf" firstAttribute="leading" secondItem="hhG-Kg-ESb" secondAttribute="leading" constant="145" id="Ibr-5d-65t"/>
-                            <constraint firstItem="hhG-Kg-ESb" firstAttribute="bottom" secondItem="ZGG-7t-oBf" secondAttribute="bottom" constant="95" id="JoA-fC-Gsa"/>
+                            <constraint firstItem="ZGG-7t-oBf" firstAttribute="centerX" secondItem="HeB-JV-O2m" secondAttribute="centerX" id="Lyb-z1-vU4"/>
                             <constraint firstItem="3eV-t3-IMS" firstAttribute="top" secondItem="mDw-ka-kwv" secondAttribute="bottom" constant="21" id="Vq2-04-7Mh"/>
                             <constraint firstItem="hhG-Kg-ESb" firstAttribute="trailing" secondItem="uUi-8Q-Xex" secondAttribute="trailing" constant="20" id="Y1t-Za-bBo"/>
                             <constraint firstItem="a3Q-yU-wYK" firstAttribute="top" secondItem="3eV-t3-IMS" secondAttribute="bottom" constant="21" id="kSQ-em-i29"/>
-                            <constraint firstItem="hhG-Kg-ESb" firstAttribute="trailing" secondItem="ZGG-7t-oBf" secondAttribute="trailing" constant="145" id="mYU-g5-IiZ"/>
                             <constraint firstItem="hhG-Kg-ESb" firstAttribute="trailing" secondItem="mDw-ka-kwv" secondAttribute="trailing" constant="20" id="msH-Oc-eGV"/>
                             <constraint firstItem="hhG-Kg-ESb" firstAttribute="trailing" secondItem="a3Q-yU-wYK" secondAttribute="trailing" constant="20" id="rDu-Vy-qaJ"/>
                             <constraint firstItem="uUi-8Q-Xex" firstAttribute="top" secondItem="hhG-Kg-ESb" secondAttribute="top" constant="24" id="wef-OQ-ORC"/>
