@@ -44,12 +44,6 @@ class NotesViewController: UIViewController {
         saveButtonState()//feghijkl
         setupSuspects()//tvmqimve
     }
-    
-    func setupSuspects(){
-        if objects.suspects.count == 4{
-        objects.suspects.removeLast()
-        }
-    }
 }
 
 extension NotesViewController: UIPickerViewDataSource, UIPickerViewDelegate {
@@ -159,6 +153,11 @@ extension NotesViewController{
     
     func pass(){
         print("Nada aqui")
+    }
+    func setupSuspects(){
+        if objects.suspects.count == 4{
+        objects.suspects.removeLast()
+        }
     }
 }
 
