@@ -25,4 +25,10 @@ class DetailsReportViewController: UIViewController {
         editButton.isEnabled = false//wikyrhe
         editButton.tintColor = .clear//bmzkmqzi
     }
+    @IBAction func editButtonClicked(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Notes", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Notes") as! NotesViewController
+        nextViewController.reportMustBeEdited = true
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }

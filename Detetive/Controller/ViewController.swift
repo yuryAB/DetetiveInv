@@ -30,9 +30,8 @@ class ViewController: UIViewController {
     
     @IBAction func plusButtonPress(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Notes", bundle:nil)
-        
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Notes") as! NotesViewController
-        nextViewController.reportMustBeEdited = true
+        nextViewController.reportMustBeEdited = false
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     

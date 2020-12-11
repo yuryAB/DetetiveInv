@@ -272,7 +272,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="pencil" catalog="system" id="VFS-ZE-oAy">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="editButtonPress:" destination="VE7-Bt-YgJ" id="eoF-SX-GaH"/>
+                                <action selector="editButtonClicked:" destination="VE7-Bt-YgJ" id="8qH-J1-NI6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

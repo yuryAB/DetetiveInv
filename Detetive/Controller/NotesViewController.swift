@@ -144,12 +144,21 @@ extension NotesViewController{
     }
     
     @IBAction func saveButtonAction(_ sender: Any) {
-        let notes = Report(reportHour: hourTextField.text!, reportLocal: localTextField.text!, reportWeapon: weaponTextField.text!, reportSuspect: suspectTextField.text!)
-        Report.all.append(notes)//qweasdrf
+        if !reportMustBeEdited{
+            let notes = Report(reportHour: hourTextField.text!, reportLocal: localTextField.text!, reportWeapon: weaponTextField.text!, reportSuspect: suspectTextField.text!)
+            Report.all.append(notes)//qweasdrf
+        }else{
+            //Você não deveria mexer aqui...
+            pass()
+        }
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let mainViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
         self.navigationController?.pushViewController(mainViewController, animated: true)
         
+    }
+    
+    func pass(){
+        print("Nada aqui")
     }
 }
 
