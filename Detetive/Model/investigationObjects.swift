@@ -24,6 +24,6 @@ class InvestigationObject{
 }
 
 extension InvestigationObject{
-   static var objectList = InvestigationObject(hours: ["10h","13h","15h","16h","18h30min"], locals: ["Quarto","Sala","Cozinha","Lavanderia"], suspects: ["Sigynbe","Andrea","Vevoda","Culpado"], weapons: ["Tesoura","Martelo","Faca","Travesseiro","Marreta","Corda"],realObjects: ["')^","GkWhje","9kbfWZe","JhWl[ii[_he"])
+   static var objectList = InvestigationObject(hours: ["10h","13h","15h","16h","18h30min"], locals: ["Quarto","Sala","Cozinha","Lavanderia"], suspects: ["Sigynbe","Amelia","Vevoda","Culpado"], weapons: ["Tesoura","Martelo","Faca","Travesseiro","Marreta","Corda"],realObjects: ["')^","GkWhje","9kbfWZe","JhWl[ii[_he"])
 }
 
