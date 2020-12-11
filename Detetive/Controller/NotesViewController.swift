@@ -132,7 +132,7 @@ extension NotesViewController{
             saveButton.layer.borderWidth = 1
             saveButton.clipsToBounds = true
             saveButton.layer.borderColor = UIColor.white.cgColor
-            saveButton.layer.cornerRadius = 20
+            saveButton.layer.cornerRadius = 15
             saveButton.isEnabled = false
         }
     }
