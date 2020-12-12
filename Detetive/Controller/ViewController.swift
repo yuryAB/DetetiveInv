@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         listTableView.reloadData()
+        plusButtonAvailability()
     }
     
     @IBAction func plusButtonPress(_ sender: Any) {
