@@ -19,6 +19,7 @@ class NotesViewController: UIViewController {
     var suspectPickerView = UIPickerView()
     let objects = InvestigationObject.objectList
     var reportMustBeEdited = false
+    var noteToReplace:Report!
     
     override func viewDidLoad() {
         super.viewDidLoad()

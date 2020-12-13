@@ -31,8 +31,10 @@ class DetailsReportViewController: UIViewController {
     }
     @IBAction func editButtonClicked(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Notes", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Notes") as! NotesViewController
-        nextViewController.reportMustBeEdited = true
-        self.navigationController?.pushViewController(nextViewController, animated: true)
+        let notesViewController = storyBoard.instantiateViewController(withIdentifier: "Notes") as! NotesViewController
+        notesViewController.reportMustBeEdited = true
+        notesViewController.noteToReplace = details
+        
+        self.navigationController?.pushViewController(notesViewController, animated: true)
     }
 }
