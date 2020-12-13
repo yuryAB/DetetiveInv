@@ -94,13 +94,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         var intuitionScore = 0
         for object in intuition{
             switch object {
-            case encrypt(message:hour):
+            case rmvtuay(message:hour):
                 intuitionScore+=1
-            case encrypt(message:local):
+            case rmvtuay(message:local):
                 intuitionScore+=1
-            case encrypt(message:suspect):
+            case rmvtuay(message:suspect):
                 intuitionScore+=1
-            case encrypt(message:weapon):
+            case rmvtuay(message:weapon):
                 intuitionScore+=1
             default:
                 intuitionScore+=0
@@ -115,7 +115,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         if score >= 4 {start4.alpha = 1}
     }
     
-    func encrypt(message: String) -> String {
+    func rmvtuay(message: String) -> String {
         let unicodeScalars = message.unicodeScalars.map { UnicodeScalar(Int($0.value) - 10)! }
         return String(String.UnicodeScalarView(unicodeScalars))
     }
