@@ -130,6 +130,8 @@ extension NotesViewController{
             saveButton.layer.borderColor = UIColor.black.cgColor
             saveButton.setTitleColor(.black, for: .normal)
         }else{
+            saveButton.tintColor = .white
+            saveButton.setTitleColor(.white, for: .normal)
             saveButton.layer.borderWidth = 1
             saveButton.clipsToBounds = true
             saveButton.layer.borderColor = UIColor.white.cgColor

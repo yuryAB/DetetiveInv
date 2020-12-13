@@ -40,7 +40,7 @@
                                 <rect key="frame" x="155" y="732" width="104" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Salvar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="saveButtonAction:" destination="Ng5-R4-SLn" eventType="touchUpInside" id="yuX-W6-mDA"/>
