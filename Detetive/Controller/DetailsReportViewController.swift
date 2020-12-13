@@ -22,8 +22,12 @@ class DetailsReportViewController: UIViewController {
         self.horaLabel.text = self.details?.reportHour
         self.armaLabel.text = self.details?.reportWeapon
         self.localImage.image = UIImage(named: details!.reportLocal)
-        editButton.isEnabled = false//wikyrhe
-        editButton.tintColor = .clear//bmzkmqzi
+        editButtonSetup() //wikyrhe
+    }
+    
+    func editButtonSetup(){
+        editButton.isEnabled = false
+        editButton.tintColor = .clear
     }
     @IBAction func editButtonClicked(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Notes", bundle:nil)
