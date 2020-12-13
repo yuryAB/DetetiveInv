@@ -16,28 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JzH-xY-GgX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="3" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JzH-xY-GgX">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tableCell" id="Tdu-p6-jVh" customClass="ListTableViewCell" customModule="Detetive" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="134"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tdu-p6-jVh" id="Ccv-se-Gvf" customClass="ListTableViewCell" customModule="Detetive" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="134.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="134"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufu-HF-vgR">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVn-5z-XpJ" userLabel="ilistrationsView">
-                                                            <rect key="frame" x="0.0" y="0.0" width="134" height="134.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="134" height="134"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sigynbe" translatesAutoresizingMaskIntoConstraints="NO" id="TrX-z3-O4I">
-                                                                    <rect key="frame" x="11" y="11" width="112" height="112.5"/>
+                                                                    <rect key="frame" x="11" y="11" width="112" height="112"/>
                                                                 </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Martelo" translatesAutoresizingMaskIntoConstraints="NO" id="sRe-Ce-9iN">
-                                                                    <rect key="frame" x="76" y="86" width="58" height="48.5"/>
+                                                                    <rect key="frame" x="76" y="86" width="58" height="48"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -55,16 +55,16 @@
                                                             </constraints>
                                                         </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lQF-52-t9w" userLabel="verticalStackView">
-                                                            <rect key="frame" x="134" y="0.0" width="241" height="134.5"/>
+                                                            <rect key="frame" x="134" y="0.0" width="241" height="134"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cozinha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nc-Xw-PJY">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="241" height="49"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="241" height="48.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00hrs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l1-aD-uhu">
-                                                                    <rect key="frame" x="0.0" y="49" width="241" height="55.5"/>
+                                                                    <rect key="frame" x="0.0" y="48.5" width="241" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="55.5" id="Mi0-PB-X8I"/>
                                                                     </constraints>
@@ -73,30 +73,30 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mbh-Fl-TS7" userLabel="starsStackView">
-                                                                    <rect key="frame" x="0.0" y="104.5" width="241" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="104" width="241" height="30"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="g6J-cd-i6d">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="g6J-cd-i6d">
                                                                             <rect key="frame" x="0.0" y="0.0" width="59.5" height="30"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="30" id="auJ-p8-RD4"/>
                                                                                 <constraint firstAttribute="width" constant="30" id="w55-ry-Pfq"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="jfd-3t-Gim">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="jfd-3t-Gim">
                                                                             <rect key="frame" x="60.5" y="0.0" width="59.5" height="30"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="50" id="L00-0R-VbE"/>
                                                                                 <constraint firstAttribute="width" constant="59.5" id="f6w-BP-RHw"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="7mz-2S-jef">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="7mz-2S-jef">
                                                                             <rect key="frame" x="121" y="0.0" width="59.5" height="30"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="59.5" id="nW3-Ca-rmq"/>
                                                                                 <constraint firstAttribute="height" constant="50" id="qEw-YZ-fwj"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="lGa-CA-R6D">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="lGa-CA-R6D">
                                                                             <rect key="frame" x="181.5" y="0.0" width="59.5" height="30"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="59.5" id="vhw-q9-2Et"/>
@@ -195,7 +195,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwc-03-3LW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quarto" translatesAutoresizingMaskIntoConstraints="NO" id="gwc-03-3LW">
                                 <rect key="frame" x="20" y="96" width="374" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="QvN-4f-v7H"/>
@@ -272,7 +272,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="pencil" catalog="system" id="VFS-ZE-oAy">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="editButtonPress:" destination="VE7-Bt-YgJ" id="eoF-SX-GaH"/>
+                                <action selector="editButtonClicked:" destination="VE7-Bt-YgJ" id="8qH-J1-NI6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -281,6 +281,7 @@
                         <outlet property="armaLabel" destination="ubt-hz-qeZ" id="eGg-k4-xzc"/>
                         <outlet property="editButton" destination="VFS-ZE-oAy" id="UaI-Np-JJJ"/>
                         <outlet property="horaLabel" destination="GRJ-8x-eb0" id="Qr2-7l-cFe"/>
+                        <outlet property="localImage" destination="gwc-03-3LW" id="FgH-z5-pWc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEQ-RX-gvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -308,6 +309,7 @@
     </scenes>
     <resources>
         <image name="Martelo" width="170" height="170"/>
+        <image name="Quarto" width="374" height="250"/>
         <image name="Sigynbe" width="342" height="361"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="plus" catalog="system" width="128" height="113"/>

@@ -42,13 +42,7 @@ class NotesViewController: UIViewController {
         weaponPickerView.tag = 3
         suspectPickerView.tag = 4
         saveButtonState()//feghijkl
-        setupSuspects()
-    }
-    
-    func setupSuspects(){//tvmqimve
-        if objects.suspects.count == 4{
-        objects.suspects.removeLast()
-        }
+        setupSuspects()//tvmqimve
     }
 }
 
@@ -138,18 +132,32 @@ extension NotesViewController{
             saveButton.layer.borderWidth = 1
             saveButton.clipsToBounds = true
             saveButton.layer.borderColor = UIColor.white.cgColor
-            saveButton.layer.cornerRadius = 20
+            saveButton.layer.cornerRadius = 15
             saveButton.isEnabled = false
         }
     }
     
     @IBAction func saveButtonAction(_ sender: Any) {
-        let notes = Report(reportHour: hourTextField.text!, reportLocal: localTextField.text!, reportWeapon: weaponTextField.text!, reportSuspect: suspectTextField.text!)
-        Report.all.append(notes)//qweasdrf
+        if !reportMustBeEdited{
+            let notes = Report(reportHour: hourTextField.text!, reportLocal: localTextField.text!, reportWeapon: weaponTextField.text!, reportSuspect: suspectTextField.text!)
+            Report.all.append(notes)//qweasdrf
+        }else{
+            //Você não deveria mexer aqui...
+            pass()
+        }
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let mainViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
         self.navigationController?.pushViewController(mainViewController, animated: true)
         
+    }
+    
+    func pass(){
+        print("Nada aqui")
+    }
+    func setupSuspects(){
+        if objects.suspects.count == 4{
+        objects.suspects.removeLast()
+        }
     }
 }
 
