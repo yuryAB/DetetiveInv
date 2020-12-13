@@ -74,6 +74,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             print("Havia algo aqui...")
+            //tableView.deleteRows(at: [indexPath], with: .fade)
             plusButtonAvailability()
         }
     }
