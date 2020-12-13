@@ -141,8 +141,13 @@ extension NotesViewController{
     }
     
     @IBAction func saveButtonAction(_ sender: Any) {
+        let reportHour = hourTextField.text
+        let reportLocal = localTextField.text
+        let reportSuspect = suspectTextField.text
+        let reportWeapon = weaponTextField.text
+        
         if !reportMustBeEdited{
-            let notes = Report(reportHour: hourTextField.text!, reportLocal: localTextField.text!, reportWeapon: weaponTextField.text!, reportSuspect: suspectTextField.text!)
+            let notes = Report(reportHour: reportHour!, reportLocal: reportLocal!, reportWeapon: reportWeapon!, reportSuspect: reportSuspect!)
             Report.all.append(notes)//qweasdrf
         }else{
             //Você não deveria mexer aqui...
