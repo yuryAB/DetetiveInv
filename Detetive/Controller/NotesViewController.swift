@@ -42,7 +42,7 @@ class NotesViewController: UIViewController {
         localPickerView.tag = 2
         weaponPickerView.tag = 3
         suspectPickerView.tag = 4
-        saveButtonState()//feghijkl
+        saveButtonState()
         setupSuspects()//tvmqimve
     }
 }
@@ -120,7 +120,7 @@ extension NotesViewController{
                 return false
             }
         }
-        return true //khfjersj
+        return true
     }
     func saveButtonState(){
         let state = verifyNilTexts()
@@ -149,10 +149,20 @@ extension NotesViewController{
         if !reportMustBeEdited{
             let notes = Report(reportHour: reportHour!, reportLocal: reportLocal!, reportWeapon: reportWeapon!, reportSuspect: reportSuspect!)
             Report.all.append(notes)
-            //Criar
+//            let dataManager = InvestigationDataManager.shared
+//            if let _ = dataManager.createInvestigationNote(weapon: reportWeapon!, hour: reportHour!, local: reportLocal!, suspect: reportSuspect!){
+//                    }else{
+//                  return
+//            }
         }else{
-            //Editar
-            return
+//            var noteToReplace:Investigation!
+//
+//            let dataManager = InvestigationDataManager.shared
+//            noteToReplace.reportHour = hourTextField.text
+//            noteToReplace.reportWeapon = weaponTextField.text
+//            noteToReplace.reportLocal = localTextField.text
+//            noteToReplace.reportSuspect = suspectTextField.text
+//            dataManager.updateInvestigationNote(investigation: noteToReplace)
         }
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let mainViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
@@ -164,6 +174,9 @@ extension NotesViewController{
         if objects.suspects.count == 4{
         objects.suspects.removeLast()
         }
+    }
+    func pass(){
+        print("...")
     }
 }
 

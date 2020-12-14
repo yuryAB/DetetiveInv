@@ -31,8 +31,12 @@ class ViewController: UIViewController {
     }
     
     func setupData(){
-        //Listar
-        return
+//        let dataManager = InvestigationDataManager.shared
+//        if let investigationReports = dataManager.fetchInvestigationNote(){
+//            reports = investigationReports
+//        }else{
+//            reports = []
+//        }
     }
     
     @IBAction func plusButtonPress(_ sender: Any) {
@@ -60,7 +64,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell") as! ListTableViewCell
-        //Listar
         let report = reports[indexPath.row]
         let reportHour = report.reportHour
         let reportLocal = report.reportLocal
@@ -79,8 +82,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            //Delete
-            //setupData()
+//            let noteToDelete = reports[indexPath.row]
+//            let dataManager = InvestigationDataManager.shared
+//            dataManager.deleteInvestigationNote(investigation: noteToDelete)
+//            setupData()
             //tableView.deleteRows(at: [indexPath], with: .fade)
             plusButtonAvailability()
         }
