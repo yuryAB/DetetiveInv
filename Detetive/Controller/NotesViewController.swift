@@ -155,8 +155,6 @@ extension NotesViewController{
 //                  return
 //            }
         }else{
-//            var noteToReplace:Investigation!
-//
 //            let dataManager = InvestigationDataManager.shared
 //            noteToReplace.reportHour = hourTextField.text
 //            noteToReplace.reportWeapon = weaponTextField.text
