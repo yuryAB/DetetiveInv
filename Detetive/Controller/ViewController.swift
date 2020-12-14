@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var plusButton: UIBarButtonItem!
     var reports =  Report.all //[Investigation] = []
@@ -32,12 +31,7 @@ class ViewController: UIViewController {
     }
     
     func setupData(){
-//        let dataManager = InvestigationDataManager.shared
-//        if let investigationReports = dataManager.fetchInvestigationNote(){
-//                reports = investigationReports
-//        }else{
-//                reports = []
-//        }
+        //Listar
         return
     }
     
@@ -85,11 +79,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-//            let noteToDelete = reports[indexPath.row]
-//            let dataManager = InvestigationDataManager.shared
-//            dataManager.deleteInvestigationNote(investigation: noteToDelete)
-//            setupData()
-//            tableView.deleteRows(at: [indexPath], with: .fade)
+            //Delete
+            //setupData()
+            //tableView.deleteRows(at: [indexPath], with: .fade)
             plusButtonAvailability()
         }
     }

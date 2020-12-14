@@ -19,7 +19,7 @@ class NotesViewController: UIViewController {
     var suspectPickerView = UIPickerView()
     let objects = InvestigationObject.objectList
     var reportMustBeEdited = false
-    var noteToReplace:Report! //Investigation
+    var noteToReplace:Report! //Investigation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -149,21 +149,10 @@ extension NotesViewController{
         if !reportMustBeEdited{
             let notes = Report(reportHour: reportHour!, reportLocal: reportLocal!, reportWeapon: reportWeapon!, reportSuspect: reportSuspect!)
             Report.all.append(notes)
-            
-//            let dataManager = InvestigationDataManager.shared
-//            if let _ = dataManager.createInvestigationNote(weapon: reportWeapon!, hour: reportHour!, local: reportLocal!, suspect: reportSuspect!){
-//                    }else{
-//                  return
-//            }
-            
+            //Criar
         }else{
-//            let dataManager = InvestigationDataManager.shared
-//            noteToReplace.reportHour = hourTextField.text
-//            noteToReplace.reportWeapon = weaponTextField.text
-//            noteToReplace.reportLocal = localTextField.text
-//            noteToReplace.reportSuspect = suspectTextField.text
-//            dataManager.updateInvestigationNote(investigation: noteToReplace)
-            pass()
+            //Editar
+            return
         }
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let mainViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
@@ -171,9 +160,6 @@ extension NotesViewController{
         
     }
     
-    func pass(){
-        print("Nada aqui")
-    }
     func setupSuspects(){
         if objects.suspects.count == 4{
         objects.suspects.removeLast()
