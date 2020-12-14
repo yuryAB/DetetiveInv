@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var plusButton: UIBarButtonItem!
-    var reports =  Report.all //[Investigation] = []
+    var reports =  Report.all //:[Investigation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad() 
