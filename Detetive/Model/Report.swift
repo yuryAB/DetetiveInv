@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 class Report{
-    var reportHour: String
-    var reportLocal: String
-    var reportWeapon: String
-    var reportSuspect: String
+    var reportHour: String!
+    var reportLocal: String!
+    var reportWeapon: String!
+    var reportSuspect: String!
     
     init(reportHour: String,reportLocal: String,reportWeapon: String,reportSuspect: String) {
         self.reportHour = reportHour

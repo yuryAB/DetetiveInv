@@ -19,7 +19,7 @@ class NotesViewController: UIViewController {
     var suspectPickerView = UIPickerView()
     let objects = InvestigationObject.objectList
     var reportMustBeEdited = false
-    var noteToReplace:Report!
+    var noteToReplace:Report! //Investigation
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -148,9 +148,21 @@ extension NotesViewController{
         
         if !reportMustBeEdited{
             let notes = Report(reportHour: reportHour!, reportLocal: reportLocal!, reportWeapon: reportWeapon!, reportSuspect: reportSuspect!)
-            Report.all.append(notes)//qweasdrf
+            Report.all.append(notes)
+            
+//            let dataManager = InvestigationDataManager.shared
+//            if let _ = dataManager.createInvestigationNote(weapon: reportWeapon!, hour: reportHour!, local: reportLocal!, suspect: reportSuspect!){
+//                    }else{
+//                  return
+//            }
+            
         }else{
-            //Você não deveria mexer aqui...
+//            let dataManager = InvestigationDataManager.shared
+//            noteToReplace.reportHour = hourTextField.text
+//            noteToReplace.reportWeapon = weaponTextField.text
+//            noteToReplace.reportLocal = localTextField.text
+//            noteToReplace.reportSuspect = suspectTextField.text
+//            dataManager.updateInvestigationNote(investigation: noteToReplace)
             pass()
         }
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)

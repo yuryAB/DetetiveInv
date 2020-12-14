@@ -9,7 +9,7 @@ import UIKit
 
 class DetailsReportViewController: UIViewController {
  
-    var details: Report?
+    var details: Report?//Investigation!
     
     @IBOutlet var suspeitoLabel: UILabel!
     @IBOutlet var horaLabel: UILabel!
@@ -21,7 +21,7 @@ class DetailsReportViewController: UIViewController {
         self.suspeitoLabel.text = self.details?.reportSuspect
         self.horaLabel.text = self.details?.reportHour
         self.armaLabel.text = self.details?.reportWeapon
-        self.localImage.image = UIImage(named: details!.reportLocal)
+        self.localImage.image = UIImage(named: details!.reportLocal!)
         editButtonSetup() //wikyrhe
     }
     

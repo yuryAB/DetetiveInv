@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var plusButton: UIBarButtonItem!
-    var reports =  Report.all
+    var reports =  Report.all //[Investigation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad() 
@@ -22,11 +22,23 @@ class ViewController: UIViewController {
         listTableView.delegate = self
         listTableView.dataSource = self
         plusButtonAvailability()
+        setupData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         listTableView.reloadData()
         plusButtonAvailability()
+        setupData()
+    }
+    
+    func setupData(){
+//        let dataManager = InvestigationDataManager.shared
+//        if let investigationReports = dataManager.fetchInvestigationNote(){
+//                reports = investigationReports
+//        }else{
+//                reports = []
+//        }
+        return
     }
     
     @IBAction func plusButtonPress(_ sender: Any) {
@@ -63,18 +75,21 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         
         cell.hour.text = reportHour
         cell.local.text = reportLocal
-        cell.suspect.image = UIImage(named: reportSuspect)
-        cell.weapon.image = UIImage(named: reportWeapon)
+        cell.suspect.image = UIImage(named: reportSuspect!)
+        cell.weapon.image = UIImage(named: reportWeapon!)
         
-        let score = intuitionScore(hour: reportHour, local: reportLocal, suspect: reportSuspect, weapon: reportWeapon)
+        let score = intuitionScore(hour: reportHour!, local: reportLocal!, suspect: reportSuspect!, weapon: reportWeapon!)
         setScore(start1: cell.star1,start2: cell.star2,start3: cell.star3,start4: cell.star4,score:score)
         return cell
     }
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            print("Havia algo aqui...")
-            //tableView.deleteRows(at: [indexPath], with: .fade)
+//            let noteToDelete = reports[indexPath.row]
+//            let dataManager = InvestigationDataManager.shared
+//            dataManager.deleteInvestigationNote(investigation: noteToDelete)
+//            setupData()
+//            tableView.deleteRows(at: [indexPath], with: .fade)
             plusButtonAvailability()
         }
     }
