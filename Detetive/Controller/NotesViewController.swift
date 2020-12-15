@@ -155,6 +155,7 @@ extension NotesViewController{
 //                  return
 //            }
         }else{
+            
 //            let dataManager = InvestigationDataManager.shared
 //            noteToReplace.reportHour = hourTextField.text
 //            noteToReplace.reportWeapon = weaponTextField.text
@@ -172,9 +173,6 @@ extension NotesViewController{
         if objects.suspects.count == 4{
         objects.suspects.removeLast()
         }
-    }
-    func pass(){
-        print("...")
     }
 }
 

@@ -82,12 +82,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-//            let noteToDelete = reports[indexPath.row]
-//            let dataManager = InvestigationDataManager.shared
-//            dataManager.deleteInvestigationNote(investigation: noteToDelete)
-//            setupData()
-            //tableView.deleteRows(at: [indexPath], with: .fade)
-            plusButtonAvailability()
+            //letsDelete(noteToDelete: reports[indexPath.row])
+            plusButtonAvailability()//tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
@@ -126,6 +122,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         if score >= 3 {start3.alpha = 1}
         if score >= 4 {start4.alpha = 1}
     }
+    
+//    func mustDelete(noteToDelete:Investigation){
+//        let dataManager = InvestigationDataManager.shared
+//        dataManager.deleteInvestigationNote(investigation: noteToDelete)
+//        setupData()
+//    }
+//    func letsDelete(noteToDelete:Investigation){
+//        print("...")
+//    }
     
     func rmvtuay(message: String) -> String {
         let unicodeScalars = message.unicodeScalars.map { UnicodeScalar(Int($0.value) - 10)! }
