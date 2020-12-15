@@ -307,6 +307,7 @@
             <point key="canvasLocation" x="-104.34782608695653" y="122.54464285714285"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="Martelo" width="170" height="170"/>
         <image name="Quarto" width="374" height="250"/>
